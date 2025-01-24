@@ -7,7 +7,7 @@ x-shared-properties: &shared-properties
     - /dev/snd:/dev/snd           # to share audio devices
     - /dev/bus/usb                # to share usb devices
 
-name: home-assistant-jetson
+name: whysper-piper
 version: "3.9"
 services:
 
