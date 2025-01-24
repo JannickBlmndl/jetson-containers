@@ -59,6 +59,10 @@ services:
       - ha-whisper-data:/data
       - /etc/localtime:/etc/localtime:ro
       - /etc/timezone:/etc/timezone:ro
+    environment:
+      WHISPER_MODEL: "tiny-int8" 
+      WHISPER_BEAM_SIZE: "1" 
+      WHISPER_LANGUAGE: "nl" 
 
   piper-tts:
     image: dustynv/wyoming-piper:master-r32.7.1
